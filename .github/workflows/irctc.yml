@@ -54,7 +54,7 @@ jobs:
     - name: Installing Cypress & Running IRCTC Cypress Automation
       run: |
         npm install cypress
-        npx cypress run --browser chrome --headed --record --key 7077be31-9dc4-49b7-a3fe-bf8817c5d0c2 --env UPI_ID=${{ inputs.UPI_ID || '' }},USERNAME=${{ inputs.USERNAME || secrets.USERNAME }},PASSWORD=${{ inputs.PASSWORD || secrets.PASSWORD }}
+        npx cypress run --browser chrome --headed --record --key 7f6e8b54-a2d7-4069-b2ec-450ca65d39b7 --env UPI_ID=${{ inputs.UPI_ID || '' }},USERNAME=${{ inputs.USERNAME || secrets.USERNAME }},PASSWORD=${{ inputs.PASSWORD || secrets.PASSWORD }}
 
     # - name: Running IRCTC Cypress Script
     #   uses: cypress-io/github-action@v6
